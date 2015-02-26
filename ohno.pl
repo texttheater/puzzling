@@ -14,8 +14,8 @@
 %	represented by the number of other blue dots they can see.
 ohno(Rows) :-
   % Board shape:
-  Length in 1..11, % limit for the benefit of pretty-printing
-  square(Length, Rows),%trace
+  between(1, 11, Length), % limit for the benefit of pretty-printing
+  square(Length, Rows),
   % Determine minimum and maximum numbers for each dot:
   Max is (Length - 1) * 2,
   maplist(maplist(seemax(Max)), Rows),
