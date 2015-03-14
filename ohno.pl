@@ -8,7 +8,7 @@
 
 %%	ohno(?Rows)
 %
-%	True iff Rows is a solution of the game http://0hno.com on a square
+%	True iff Rows is a solution of the game http://0hn0.com on a square
 %	board at most 11 tiles wide and high, represented as a list of lists
 %	(rows) in which red dots are represented by `0` and blue dots are
 %	represented by the number of other blue dots they can see.
